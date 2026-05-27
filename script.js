@@ -1,0 +1,1 @@
+document.getElementById('year').textContent=new Date().getFullYear();const o=new IntersectionObserver(e=>e.forEach(t=>{if(t.isIntersecting)t.target.classList.add('active')}));document.querySelectorAll('.reveal').forEach(e=>o.observe(e));
