@@ -1,184 +1,299 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zebra Estate Collection | Franschhoek Stays</title>
-  <meta name="description" content="Zebra Estate Collection offers curated private stays in Franschhoek with breakfast service, braai experiences and local guest guides." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zebra Collection — A curated collection of distinctive stays</title>
+<meta name="description" content="Zebra Collection is a small, carefully chosen set of independent places to stay: Lush Garden, Mountain View, and The Barn Gallery.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header" id="top">
-    <nav class="nav">
-      <a class="brand" href="#top">Zebra Estate Collection</a>
-      <button class="nav-toggle" aria-label="Open navigation">☰</button>
-      <div class="nav-links">
-        <a href="#stays">Stays</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#guide">Franschhoek Guide</a>
-        <a href="#contact" class="nav-cta">Book</a>
-      </div>
-    </nav>
-  </header>
+<body id="top">
 
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow">Private Franschhoek stays</p>
-        <h1>Stay where wild calm meets the Winelands.</h1>
-        <p class="hero-text">A small collection of curated homes shaped by mountain views, warm interiors, thoughtful hosting, breakfast service and relaxed South African braai experiences.</p>
-        <div class="hero-actions">
-          <a href="#stays" class="btn btn-light">Explore the collection</a>
-          <a href="#experiences" class="btn btn-outline">Add an experience</a>
-        </div>
-      </div>
-    </section>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Zebra Collection Franschhoek, home">
+    <img class="brand__mark" src="assets/zebra-logo-1.webp" alt="" aria-hidden="true">
+    <span class="brand__word"><span class="brand__name">zebra</span><span class="brand__sub">Collection</span></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a class="nav__link" href="#collection">Collection</a>
+    <a class="nav__link" href="#approach">Approach</a>
+    <a class="nav__cta" href="mailto:stay@zebracollection.co.za">Enquire</a>
+  </nav>
+  <button class="nav__toggle" id="menuOpen" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><span></span></button>
+</header>
 
-    <section class="intro section-padding">
-      <div class="section-label">The feeling</div>
-      <div class="intro-grid">
-        <h2>Not just a place to sleep. A private Franschhoek experience.</h2>
-        <p>Zebra Estate Collection brings together private stays, local knowledge and hospitality details that make guests feel guided from arrival to checkout. Every home is designed for slow mornings, relaxed evenings, and easy access to Franschhoek’s restaurants, wine farms and mountain scenery.</p>
-      </div>
-    </section>
+<!-- MOBILE MENU -->
+<div class="menu" id="menu" aria-hidden="true">
+  <button class="menu__close" id="menuClose" aria-label="Close menu">Close</button>
+  <a href="#collection" data-menu-link>Collection</a>
+  <a href="#approach" data-menu-link>Approach</a>
+  <a href="mailto:stay@zebracollection.co.za" data-menu-link>Enquire</a>
+</div>
 
-    <section class="signature-strip">
-      <p>Breakfast trays. Braai smoke. Vineyard air. Mountain light. This is the Zebra rhythm.</p>
-    </section>
+<main>
 
-    <section class="stays section-padding" id="stays">
-      <div class="section-heading">
-        <p class="eyebrow">The collection</p>
-        <h2>Choose your stay mood</h2>
-        <p>Three private stays in Franschhoek, each with its own personality, guest flow and experience angle.</p>
-      </div>
-
-      <div class="stay-grid">
-        <article class="stay-card reveal">
-          <div class="stay-image mountain"></div>
-          <div class="stay-content">
-            <p class="tag">Pool · Gym · Mountain views</p>
-            <h3>Winelands Mountain View Oasis</h3>
-            <p>A polished retreat in a secure gated community, made for guests who want comfort, a private pool, dedicated workspace, home gym and scenic mountain moments.</p>
-            <ul>
-              <li>6 guests · 3 bedrooms · 2 bathrooms</li>
-              <li>Private pool, gym, BBQ area and wine selection</li>
-              <li>Strong choice for families, workations and luxury breaks</li>
-            </ul>
-            <a href="https://www.airbnb.co.uk/rooms/1087586075016911247?unique_share_id=040a60c5-8741-43ef-9d69-0e9ed0098603&viralityEntryPoint=1&s=76" target="_blank" rel="noopener" class="text-link">View on Airbnb</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="hero__brandline">Franschhoek stays</p>
+          <h1 class="hero__title"><span>Distinctive</span><span>places to</span><span>stay.</span></h1>
+          <p class="hero__lead">A small, carefully chosen set of independent stays — a lush garden, a mountain view, and a barn turned gallery. Each one picked for the way it feels to be there.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#collection">Explore the collection</a>
+            <a class="qlink" href="mailto:stay@zebracollection.co.za">Make an enquiry</a>
           </div>
-        </article>
-
-        <article class="stay-card reveal">
-          <div class="stay-image braai"></div>
-          <div class="stay-content">
-            <p class="tag">Braai · Gardens · Town walk</p>
-            <h3>Mystical Hideaway</h3>
-            <p>A relaxed braai-themed townhouse with garden spaces, outdoor dining and a local care package designed to introduce guests to South African flavour.</p>
-            <ul>
-              <li>6 guests · 3 bedrooms · 2 bathrooms</li>
-              <li>Self check-in, breakfast, bikes and daily service</li>
-              <li>Best for social stays, families and easy town access</li>
-            </ul>
-            <a href="https://www.airbnb.co.uk/rooms/1261088738887727169?unique_share_id=01e96271-c61f-4b7e-9109-b580a7578840&viralityEntryPoint=1&s=76" target="_blank" rel="noopener" class="text-link">View on Airbnb</a>
-          </div>
-        </article>
-
-        <article class="stay-card reveal">
-          <div class="stay-image garden"></div>
-          <div class="stay-content">
-            <p class="tag">Garden · Calm · Farm-style</p>
-            <h3>Franschhoek Farm Stay</h3>
-            <p>A serene garden-inspired sanctuary for slow mornings, family time, quiet evenings and effortless access to the village, wine farms and grocery delivery.</p>
-            <ul>
-              <li>6 guests · 3 bedrooms · 2 bathrooms</li>
-              <li>Garden dining, herbs, secure parking and breakfast</li>
-              <li>Best for peaceful retreats and longer stays</li>
-            </ul>
-            <a href="https://www.airbnb.co.uk/rooms/1559695470299459668?unique_share_id=c08ab424-6dc9-43c9-8617-d1f271aa5a0f&viralityEntryPoint=1&s=76" target="_blank" rel="noopener" class="text-link">View on Airbnb</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="experiences section-padding" id="experiences">
-      <div class="section-heading light">
-        <p class="eyebrow">Beyond the booking</p>
-        <h2>Experiences by Zebra Estate</h2>
-        <p>Available on request and subject to availability. These services help guests turn a simple stay into a memory.</p>
-      </div>
-      <div class="experience-grid">
-        <div class="experience-card reveal">
-          <span>01</span>
-          <h3>Private Breakfast Service</h3>
-          <p>Fresh, simple and beautifully served breakfast options for slow mornings before exploring the village, wine farms or mountain routes.</p>
         </div>
-        <div class="experience-card reveal">
-          <span>02</span>
-          <h3>Braai Service</h3>
-          <p>A relaxed South African braai experience with setup support, local flavours and a warm fire-side atmosphere. Ideal for families and small groups.</p>
-        </div>
-        <div class="experience-card reveal">
-          <span>03</span>
-          <h3>Local Guide</h3>
-          <p>Restaurant suggestions, wine tram ideas, scenic drives, markets, coffee stops and activities chosen to match the guest’s mood.</p>
+        <div class="hero__motif">
+          <img class="hero__logo" src="assets/zebra-logo-2.webp" alt="Zebra Collection — Franschhoek">
         </div>
       </div>
-    </section>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><i></i>Scroll</div>
+  </section>
 
-    <section class="guide section-padding" id="guide">
-      <div class="guide-layout">
+  <!-- INTRO -->
+  <section class="section intro">
+    <div class="wrap">
+      <div class="intro__grid">
+        <p class="intro__lead">Fewer places, chosen well.</p>
         <div>
-          <p class="eyebrow">Guest guide</p>
-          <h2>Franschhoek, made easy.</h2>
-          <p>Guests can arrive with confidence. The website and guidebook can include practical property instructions, curated recommendations and simple itinerary ideas.</p>
-        </div>
-        <div class="guide-list">
-          <div><strong>Eat</strong><span>Fine dining, casual cafés, family restaurants and breakfast spots.</span></div>
-          <div><strong>Explore</strong><span>Wine Tram, Mont Rochelle, galleries, chocolate shops and scenic drives.</span></div>
-          <div><strong>Use the home</strong><span>Wi‑Fi, TV, appliances, parking, check-in, check-out and emergency contacts.</span></div>
-          <div><strong>Ask us</strong><span>Breakfast, braai, birthday setup, transport referrals and special stay requests.</span></div>
+          <p class="intro__body">Zebra Collection is a curated group of independent stays. We look for somewhere with a real point of view — good light, a genuine sense of place, room to slow down — and leave out anything that feels like everywhere else.</p>
+          <p class="intro__body">Whatever you book, you deal with one team from first question to check-out.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="mood section-padding">
-      <div class="section-heading">
-        <p class="eyebrow">Signature style</p>
-        <h2>Zebra pattern, natural texture, boutique calm.</h2>
-        <p>The visual identity uses zebra-inspired patterning as a texture rather than a loud logo: black, ivory, warm beige, soft browns and natural greens.</p>
+  <!-- EXPERIENCE -->
+  <section class="scene" aria-label="The Franschhoek valley">
+    <svg class="scene__art" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F5E8CF"/>
+          <stop offset="0.5" stop-color="#F0CE92"/>
+          <stop offset="0.8" stop-color="#E9BC7A"/>
+          <stop offset="1" stop-color="#E3AE68"/>
+        </linearGradient>
+        <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#FBEFC9" stop-opacity="0.95"/>
+          <stop offset="1" stop-color="#FBEFC9" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3A2410" stop-opacity="0"/>
+          <stop offset="1" stop-color="#3A2410" stop-opacity="0.5"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="720" fill="url(#sky)"/>
+      <circle cx="1040" cy="205" r="150" fill="url(#sunGlow)"/>
+      <circle cx="1040" cy="205" r="66" fill="#FBEFC9"/>
+      <path d="M0 470 L120 400 L240 442 L360 350 L520 432 L680 360 L820 442 L980 380 L1140 440 L1300 372 L1440 432 L1440 720 L0 720 Z" fill="#DCA96C" opacity="0.9"/>
+      <path d="M0 540 C 200 500 400 560 640 520 C 900 480 1100 560 1440 520 L1440 720 L0 720 Z" fill="#C58C57"/>
+      <path d="M0 620 C 300 585 560 640 860 610 C 1140 585 1300 640 1440 615 L1440 720 L0 720 Z" fill="#A06E40"/>
+      <path d="M0 676 C 360 650 720 702 1080 672 C 1260 660 1360 690 1440 676 L1440 720 L0 720 Z" fill="#7E5330"/>
+      <rect width="1440" height="720" fill="url(#scrim)"/>
+    </svg>
+    <div class="scene__inner">
+      <p class="scene__eyebrow">The Franschhoek valley</p>
+      <h2 class="scene__title">Wake somewhere worth waking up.</h2>
+      <p class="scene__lead">Vineyards, mountains and long golden afternoons — the kind of place you don't want to leave.</p>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="section" id="collection">
+    <div class="wrap">
+      <div class="work__head">
+        <h2 class="work__title">The collection</h2>
+        <p class="work__note">Independent stays, gathered under one name.</p>
       </div>
-      <div class="pattern-row">
-        <div class="pattern-card"></div>
-        <div class="pattern-copy">
-          <h3>Design direction</h3>
-          <p>Luxury African countryside with clean typography, large property imagery, earthy tones and small zebra accents across buttons, dividers and guidebook covers.</p>
+
+      <!-- 01 -->
+      <article class="work__row">
+        <div class="work__media">
+          <div class="work__frame">
+            <svg viewBox="0 0 320 400" role="img" aria-label="Line drawing of garden foliage">
+              <path d="M40 366 H280" opacity=".5"/>
+              <path d="M74 366 C 84 306 58 258 92 186"/>
+              <path d="M74 366 C 64 314 88 272 74 214"/>
+              <path d="M162 366 C 162 288 148 234 172 150"/>
+              <path d="M168 258 C 190 246 212 256 224 276 C 202 278 180 270 168 258 Z"/>
+              <path d="M160 220 C 138 210 116 218 104 238 C 128 240 148 232 160 220 Z"/>
+              <circle cx="172" cy="150" r="10"/>
+              <path d="M172 150 V130 M172 150 L190 141 M172 150 L189 162 M172 150 L154 141 M172 150 L155 162"/>
+              <path d="M242 366 C 248 312 234 270 258 214"/>
+              <path d="M242 366 C 236 320 256 282 242 238"/>
+              <path d="M252 236 C 270 228 286 236 292 252 C 276 254 262 248 252 236 Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="work__text">
+          <span class="work__num">N<sup>o</sup>01</span>
+          <h3 class="work__name">Lush Garden</h3>
+          <p class="work__desc">A peaceful garden escape built for slow mornings and long, easy evenings — room to breathe, just steps from everything.</p>
+          <p class="work__soon">Full details coming soon.</p>
+          <a class="qlink" href="mailto:stay@zebracollection.co.za?subject=Lush%20Garden">Discover Lush Garden</a>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="work__row">
+        <div class="work__media">
+          <div class="work__frame">
+            <svg viewBox="0 0 320 400" role="img" aria-label="Line drawing of a mountain landscape">
+              <circle cx="238" cy="108" r="22"/>
+              <path d="M24 250 L104 150 L166 214 L226 132 L296 250"/>
+              <path d="M24 300 L92 232 L152 282 L212 214 L296 300"/>
+              <path d="M96 172 L120 172 M92 190 L128 190 M108 210 L146 210"/>
+              <path d="M204 168 L228 168 M198 188 L238 188"/>
+              <path d="M24 336 H296" opacity=".55"/>
+              <path d="M24 360 C 90 350 150 366 200 356 S 280 360 296 356" opacity=".7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="work__text">
+          <span class="work__num">N<sup>o</sup>02</span>
+          <h3 class="work__name">Mountain View</h3>
+          <p class="work__desc">A scenic retreat where the landscape does the talking. Wake to the ridgeline and unwind as the light changes over the valley.</p>
+          <p class="work__soon">Full details coming soon.</p>
+          <a class="qlink" href="mailto:stay@zebracollection.co.za?subject=Mountain%20View">Discover Mountain View</a>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="work__row">
+        <div class="work__media">
+          <div class="work__frame">
+            <svg viewBox="0 0 320 400" role="img" aria-label="Line drawing of a barn">
+              <path d="M30 332 H290" opacity=".55"/>
+              <path d="M70 202 V332 H250 V202"/>
+              <path d="M54 202 L160 118 L266 202"/>
+              <circle cx="160" cy="168" r="11"/>
+              <path d="M140 332 V244 H184 V332"/>
+              <path d="M140 246 L184 300 M184 246 L140 300"/>
+              <path d="M92 208 V332 M114 208 V332 M126 208 V236" opacity=".8"/>
+              <path d="M228 208 V332 M206 208 V332 M194 208 V236" opacity=".8"/>
+            </svg>
+          </div>
+        </div>
+        <div class="work__text">
+          <span class="work__num">N<sup>o</sup>03</span>
+          <h3 class="work__name">The Barn Gallery</h3>
+          <p class="work__desc">Character, atmosphere and space to gather — a working barn reimagined as a place to stay, with room for art, food and friends.</p>
+          <p class="work__soon">Full details coming soon.</p>
+          <a class="qlink" href="mailto:stay@zebracollection.co.za?subject=The%20Barn%20Gallery">Discover The Barn Gallery</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach" id="approach">
+    <svg class="band-zebra band-zebra--soft" viewBox="0 0 600 680" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M10 -40 C-4 180 72 400 58 720 L92 720 C106 400 30 180 44 -40 Z"/>
+      <path d="M78 -40 C64 180 140 400 126 720 L174 720 C188 400 112 180 126 -40 Z"/>
+      <path d="M150 -40 C136 180 212 400 198 720 L226 720 C240 400 164 180 178 -40 Z"/>
+      <path d="M210 -40 C196 180 272 400 258 720 L312 720 C326 400 250 180 264 -40 Z"/>
+      <path d="M290 -40 C276 180 352 400 338 720 L370 720 C384 400 308 180 322 -40 Z"/>
+      <path d="M352 -40 C338 180 414 400 400 720 L448 720 C462 400 386 180 400 -40 Z"/>
+      <path d="M430 -40 C416 180 492 400 478 720 L504 720 C518 400 440 180 456 -40 Z"/>
+      <path d="M486 -40 C472 180 548 400 534 720 L580 720 C594 400 518 180 532 -40 Z"/>
+    </svg>
+    <div class="wrap">
+      <div class="approach__grid">
+        <div class="approach__item">
+          <h3 class="approach__t">Chosen, not listed</h3>
+          <p class="approach__d">Every stay is picked by hand. If a place doesn't have real character, it doesn't make the collection.</p>
+        </div>
+        <div class="approach__item">
+          <h3 class="approach__t">Room to breathe</h3>
+          <p class="approach__d">Space, quiet and good light — the things that turn a night away into a proper rest.</p>
+        </div>
+        <div class="approach__item">
+          <h3 class="approach__t">One point of contact</h3>
+          <p class="approach__d">From your first question to check-out, you speak with us directly — never a call centre.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contact section-padding" id="contact">
-      <div class="contact-box reveal">
-        <p class="eyebrow">Plan your stay</p>
-        <h2>Choose a home. Add an experience. Arrive guided.</h2>
-        <p>Book through Airbnb or contact the host team for breakfast, braai service and local recommendations.</p>
-        <div class="contact-actions">
-          <a href="#stays" class="btn btn-light">View stays</a>
-          <a href="mailto:abundancetswina@gmail.com" class="btn btn-outline">Email us</a>
-        </div>
+  <!-- CTA -->
+  <section class="section cta">
+    <svg class="band-zebra band-zebra--faint" viewBox="0 0 600 680" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M10 -40 C-4 180 72 400 58 720 L92 720 C106 400 30 180 44 -40 Z"/>
+      <path d="M78 -40 C64 180 140 400 126 720 L174 720 C188 400 112 180 126 -40 Z"/>
+      <path d="M150 -40 C136 180 212 400 198 720 L226 720 C240 400 164 180 178 -40 Z"/>
+      <path d="M210 -40 C196 180 272 400 258 720 L312 720 C326 400 250 180 264 -40 Z"/>
+      <path d="M290 -40 C276 180 352 400 338 720 L370 720 C384 400 308 180 322 -40 Z"/>
+      <path d="M352 -40 C338 180 414 400 400 720 L448 720 C462 400 386 180 400 -40 Z"/>
+      <path d="M430 -40 C416 180 492 400 478 720 L504 720 C518 400 440 180 456 -40 Z"/>
+      <path d="M486 -40 C472 180 548 400 534 720 L580 720 C594 400 518 180 532 -40 Z"/>
+    </svg>
+    <div class="wrap">
+      <h2 class="cta__title">See every place in the collection.</h2>
+      <div class="cta__actions">
+        <a class="btn" href="#collection">Explore all properties</a>
+        <a class="qlink" href="mailto:stay@zebracollection.co.za">Or send an enquiry</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Zebra Estate Collection. Private stays in Franschhoek, South Africa.</p>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <svg class="footer__rule" width="100%" height="18" aria-hidden="true">
+    <defs>
+      <pattern id="zebrarule" width="96" height="18" patternUnits="userSpaceOnUse">
+        <g class="zr-stripes">
+          <rect x="6" width="7" height="18"/>
+          <rect x="20" width="4" height="18"/>
+          <rect x="30" width="14" height="18"/>
+          <rect x="50" width="5" height="18"/>
+          <rect x="61" width="8" height="18"/>
+          <rect x="76" width="4" height="18"/>
+          <rect x="86" width="6" height="18"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#zebrarule)"/>
+  </svg>
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brandname">
+        <img class="footer__mark" src="assets/zebra-logo-1.webp" alt="" aria-hidden="true">
+        zebra Collection
+      </div>
+      <p class="footer__tag">A curated collection of distinctive stays.</p>
+    </div>
+    <div>
+      <p class="footer__label">Explore</p>
+      <ul class="footer__list">
+        <li><a href="#collection">The collection</a></li>
+        <li><a href="#approach">Our approach</a></li>
+        <li><a href="mailto:stay@zebracollection.co.za">Enquire</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__label">Enquiries</p>
+      <div class="footer__contact">
+        <a href="mailto:stay@zebracollection.co.za">stay@zebracollection.co.za</a>
+        <span>Viewings by appointment</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Zebra Collection. All rights reserved.</span>
     <a href="#top">Back to top</a>
-  </footer>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
