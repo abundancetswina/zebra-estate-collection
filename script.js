@@ -4,6 +4,7 @@
   var menu = document.getElementById('menu');
   var openBtn = document.getElementById('menuOpen');
   var closeBtn = document.getElementById('menuClose');
+  var background = document.querySelectorAll('#nav, main, footer');
 
   /* one orchestrated load moment */
   requestAnimationFrame(function(){
@@ -24,6 +25,8 @@
     menu.setAttribute('aria-hidden', open ? 'false' : 'true');
     openBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
     document.body.style.overflow = open ? 'hidden' : '';
+    /* keep keyboard focus inside the overlay while it is open */
+    background.forEach(function(el){ el.inert = open; });
     if (open) closeBtn.focus(); else openBtn.focus();
   }
   openBtn.addEventListener('click', function(){ setMenu(true); });
